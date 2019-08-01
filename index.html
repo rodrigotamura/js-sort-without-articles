@@ -48,6 +48,9 @@ const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil',
 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 
 'Anywhere But Here', 'An Old Dog'];
 
+console.info('Sort this dataset ignoring articles (the, a, an)', bands);
+alert('Check at your browser`s developer tools the dataset');
+
 const listBand = document.getElementById('bands');
 
 function strip(band){
@@ -73,9 +76,6 @@ bandSorted.forEach(band => {
 
     listBand.appendChild(li);
 });
-//bandsSorted.sort((a, b) => a > b ? 1 : -1);
-
-console.log(bandsSorted);
 </script>
 
 </body>
